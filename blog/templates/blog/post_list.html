@@ -1,8 +1,13 @@
+  {% load static %}
 <html>
   <head>
+
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         <title>Delf's blog</title>
   </head>
   <body>
+    <main>
     <p>coucou</p>
     <p>j'apprends Python</p>
     <div>
@@ -16,5 +21,6 @@
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
+</main>
   </body>
 </html>
